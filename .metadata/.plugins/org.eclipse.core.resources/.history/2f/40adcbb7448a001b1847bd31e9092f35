@@ -1,0 +1,30 @@
+package com.b2w.task;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Task2 {
+	
+	public static int rearrange(int n) {
+		int[] digits = Integer.toString(n).chars().map(c -> c-'0').toArray();
+			
+		List<Integer> listaAux = new ArrayList<Integer>(); 
+		Pilha pilha = new Pilha();
+		String newNumber = "";
+
+		for(int d : digits){
+			newNumber +=d;
+			pilha.empilhar(d);
+		}
+		listaAux.add(Integer.parseInt(newNumber));
+
+		digits = Integer.toString(listaAux.get(0)).chars().map(c -> c-'0').toArray();
+
+		
+		return 0;
+	}
+
+	public static void main(String args[]) {
+		rearrange(432);
+	}	
+}

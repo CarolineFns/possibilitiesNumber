@@ -1,0 +1,34 @@
+package com.b2w.task;
+
+public class Task2 {
+	
+	public static int rearrange(int n) {
+		int[] digits = Integer.toString(n).chars().map(c -> c-'0').toArray();
+		for(int d : digits)
+			System.out.print(d);
+
+			Pilha pilha = new Pilha();
+			for(int d : digits){
+				pilha.empilhar(d);
+			}
+
+			int aux = pilha.desempilhar();
+
+			List<Integer> listaAux = new ArrayList<Integer>; 
+
+		
+		return 0;
+	}
+
+	public static void main(String args[]) {
+		Pilha p = new Pilha();
+		p.empilhar("Portuguesa ");
+		p.empilhar("Frango com catupiry ");
+		p.empilhar("Calabresa ");
+		p.empilhar("Quatro queijos ");
+		p.empilhar(10);
+		while (p.pilhaVazia() == false) {
+		System.out.println(p.desempilhar());
+		}
+	}	
+}

@@ -1,0 +1,21 @@
+INDEX VERSION 1.131+/home/caroline/Murah/workspace/task/.metadata/.plugins/org.eclipse.jdt.core
+4009525776.index
+827629879.index
+3010447580.index
+1884601711.index
+2772868675.index
+3781245972.index
+3812178071.index
+1175494123.index
+1389503885.index
+1945424836.index
+3803444301.index
+2476968268.index
+2783034045.index
+627635374.index
+1622126294.index
+2039452315.index
+2052165117.index
+565741246.index
+3538251881.index
+2906244768.index

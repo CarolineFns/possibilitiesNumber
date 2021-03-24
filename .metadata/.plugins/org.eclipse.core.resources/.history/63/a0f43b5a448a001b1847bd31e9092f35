@@ -1,0 +1,44 @@
+package com.b2w.task;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Task2 {
+	
+	public static int rearrange(int n) {
+		int[] digits = Integer.toString(n).chars().map(c -> c-'0').toArray();
+			
+		List<Integer> listaAux = new ArrayList<Integer>(); 
+		Pilha pilha = new Pilha();
+		String newNumber = "";
+
+		for(int d : digits){
+			newNumber +=d;
+			pilha.empilhar(d);
+		}
+		listaAux.add(Integer.parseInt(newNumber));
+
+		for(int d : digits){
+			newNumber +=pilha.empilhar(d);
+		}
+
+		int aux = pilha.desempilhar();
+
+		listaAux.add();
+
+		
+		return 0;
+	}
+
+	public static void main(String args[]) {
+		Pilha p = new Pilha();
+		p.empilhar("Portuguesa ");
+		p.empilhar("Frango com catupiry ");
+		p.empilhar("Calabresa ");
+		p.empilhar("Quatro queijos ");
+		p.empilhar(10);
+		while (p.pilhaVazia() == false) {
+		System.out.println(p.desempilhar());
+		}
+	}	
+}
